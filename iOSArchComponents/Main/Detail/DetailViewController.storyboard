@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AyC-Ud-FJH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="HJA-x0-Mpz">
+            <objects>
+                <viewController id="AyC-Ud-FJH" customClass="DetailViewController" customModule="Punch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QLC-8W-aS6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sNq-PA-thT">
+                                <rect key="frame" x="16" y="318.5" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQz-lx-N6X">
+                                <rect key="frame" x="16" y="380.5" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.3091657543924643" green="0.6611822007134045" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onUpdateConfirmed:" destination="AyC-Ud-FJH" eventType="touchUpInside" id="8sA-RF-mgU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VQz-lx-N6X" firstAttribute="leading" secondItem="sNq-PA-thT" secondAttribute="leading" id="3pf-cn-QZg"/>
+                            <constraint firstItem="sNq-PA-thT" firstAttribute="trailing" secondItem="QLC-8W-aS6" secondAttribute="trailingMargin" id="Pyh-hQ-Ymx"/>
+                            <constraint firstItem="sNq-PA-thT" firstAttribute="leading" secondItem="QLC-8W-aS6" secondAttribute="leadingMargin" id="ZfC-NX-eAG"/>
+                            <constraint firstItem="sNq-PA-thT" firstAttribute="centerY" secondItem="QLC-8W-aS6" secondAttribute="centerY" id="d2F-nM-zbs"/>
+                            <constraint firstItem="VQz-lx-N6X" firstAttribute="trailing" secondItem="sNq-PA-thT" secondAttribute="trailing" id="of4-LF-Sq0"/>
+                            <constraint firstItem="VQz-lx-N6X" firstAttribute="top" secondItem="sNq-PA-thT" secondAttribute="bottom" constant="32" id="wqo-hW-AkY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="z3C-NO-h1x"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputText" destination="sNq-PA-thT" id="WnE-2c-kPs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aAY-kq-uTp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-157" y="50"/>
+        </scene>
+    </scenes>
+</document>
